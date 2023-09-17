@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desktop Header 2</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <div class="notice" role="banner">
+    <div class="notice__content">
+      <p>This is a notice about how messed up the supply chain is right now. Please be patient and don't yell at us. Thank you! <i class="fa fa-exclamation-circle" aria-hidden="true"></i></p>
+    </div>
+  </div>
+
+  <header class="header" role="banner">
+		
+    <nav class="navigation" role="navigation" aria-label="Main">
+
+			<!-- left -->
+      <div class="navigation__left">
+				<a href="#" class="navigation__logo">
+					<span class="placeholder"></span>
+				</a>
+				
+        <ul class="navigation__links navigation__links--categories">
+          <li class="has-submenu">
+            <a href="#shop" aria-expanded="false">
+							Shop <i class="fa fa-sort-desc" aria-hidden="true"></i>
+						</a>
+            <ul class="navigation__submenu">
+              <li><a href="#Apparel">Apparel</a></li>
+              <li><a href="#Accessories">Accessories</a></li>
+							<li><a href="#Headwear">Headwear</a></li>
+							<li><a href="#Office">Office/Tech</a></li>
+							<li><a href="#ecards">eGift Cards</a></li>
+							<li><a href="#all">View All</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+			<!-- right -->
+			<div class="navigation__right">
+				<div class="navigation__search">
+					<input type="text" id="search-input" placeholder="Search">
+					<button id="search-icon" aria-label="Search">
+						<i class="fa fa-search"></i>
+					</button>
+				</div>
+
+				<ul class="navigation__links navigation__links--services">
+					<li>
+						<button class="navigation__icon account-icon" tabindex="0" aria-label="Account">
+							<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+						</button>
+					</li>
+
+					<li>
+						<button class="navigation__icon help-button" tabindex="0" aria-label="Help">
+							<i class="fa fa-question-circle" aria-hidden="true"></i>
+						</button>
+					</li>
+				</ul>
+
+				<ul class="navigation__links navigation__links--cart-details">
+					<li>
+						<button class="navigation__icon cart-icon" tabindex="0" aria-label="Cart">
+							<i class="fa fa-shopping-cart"></i>
+							<span class="item-count" aria-live="polite" aria-atomic="true">0</span>
+						</button>
+					</li>
+
+					<li>
+						<span class="cart-balance" aria-live="polite" aria-atomic="true">$0.00</span>
+					</li>
+				</ul>
+			</div>
+			
+    </nav>
+	</header>
+
+	<header class="mobile-header" role="banner">
+		<div class="mobile-navigation" role="navigation">
+	  
+		  <button class="mobile-navigation__hamburger" tabindex="0" aria-label="Open Menu">
+			<div class="mobile-navigation__hamburger-bar"></div>
+		  </button>
+	  
+		  <div class="mobile-navigation__logo">
+			<a href="#" class="navigation__logo" aria-label="Home">
+			  <span class="placeholder"></span>
+			</a>
+		  </div>
+	  
+		  <div class="mobile-navigation__icons">
+			<button class="navigation__icon cart-icon" tabindex="0" aria-label="Shopping Cart">
+			  <i class="fa fa-shopping-cart"></i>
+			  <span class="item-count" aria-live="polite" aria-atomic="true">0</span>
+			</button>
+			<button class="navigation__icon account-icon" tabindex="0" aria-label="Account">
+			  <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+			</button>
+		  </div>
+	  
+		</div>
+		<nav class="mobile-menu" role="navigation">
+		  <div class="mobile-menu__layers">
+			<ul id="layer1" data-value="1">
+			  <li>
+				<select name="brand" id="brand" aria-label="Select Brand">
+				  <option value="1" selected>Nike</option>
+				  <option value="2">Adiddas</option>
+				</select>
+			  </li>
+			  <li><a href="index.html">Home</a></li>
+			  <li class="has-children" role="menuitem">
+				<a href="#about" aria-haspopup="true" aria-expanded="false">About<span> ›</span></a>
+				<ul class="mobile-menu__layer hide" id="layer2" data-value="2" role="menu" aria-label="About Submenu">
+				  <li><button class="nav-link l1 mobile-menu__close-menu-arrow" aria-label="Back to Previous Menu" value="3" id="l2" style="background-color: #852470;">← Back</button></li>
+				  <li><a href="#aboutus" class="l1" value="3">About Us</a></li>
+				  <li><a href="#get-invlolved" class="l1" value="3" id="l2">Get Involved<span> ›</span></a></li>
+				  <li><a href="#history" class="l1" value="3">History</a></li>
+				  <li><a href="#" class="l1" value="3">Financials & Ratings</a></li>
+				  <li><a href="#" class="l1" value="3">Our People</a></li>
+				  <li><a href="#" class="l1" value="3">Careers</a></li>
+				  <hr role="separator">
+				  <li role="menuitem"><a href="#">Account</a></li>
+				  <li role="menuitem"><a href="#">Help</a></li>
+				</ul>
+			  </li>
+			  <li><a href="blog.html">Blog</a></li>
+			  <li><a href="contact.html">Contact</a></li>
+			  <hr role="separator">
+			  <li role="menuitem"><a href="#">Account</a></li>
+			  <li role="menuitem"><a href="#">Help</a></li>
+			</ul>
+		  </div>
+	
+		  <div class="mobile-menu__search-bar">
+			<label for="mobile-search-input" class="sr-only">Search</label>
+			<input type="text" id="mobile-search-input" class="mobile-menu__search-input" placeholder="Search">
+			<button id="mobile-search-icon" class="mobile-menu__search-icon" aria-label="Search">
+			  <i class="fa fa-search"></i>
+			</button>
+		  </div>
+	
+		</nav>
+	  </header>
+	  
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var hamburgerMenu = document.querySelector('.mobile-navigation__hamburger');
+  var bars = document.querySelectorAll('.mobile-navigation__hamburger-bar');
+  var mobileMenu = document.querySelector('.mobile-menu');
+  var mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
+  //var backButtons = document.querySelectorAll('.mobile-menu__close-menu-arrow');
+  var topLevelLinks = document.querySelectorAll('.mobile-menu__layers > ul > li > a');
+  var subMenuLinks = document.querySelectorAll('.mobile-menu__layer > li > a');
+	
+	console.log('top', topLevelLinks);
+	// helpers
+	function focusFirstMenuItem() {
+    const firstMenuItem = mobileMenu.querySelector('.mobile-menu__layers > ul > li > a');
+    if (firstMenuItem) {
+      firstMenuItem.focus();
+    }
+  }
+
+	// handlers
+  hamburgerMenu.addEventListener('click', function() {
+    for (var i = 0; i < bars.length; i++) {
+      bars[i].classList.toggle('animate');
+    }
+    mobileMenu.classList.toggle('active');
+		if (mobileMenu.classList.contains('active')) {
+      focusFirstMenuItem();
+    }
+
+    return false;
+  });
+
+	const hasChildrenLinks = document.querySelectorAll(".has-children > a");
+  hasChildrenLinks.forEach(link => {
+
+    link.addEventListener("click", function(event) {
+
+      event.preventDefault();
+      const parentLi = link.parentElement;
+      const subMenu = parentLi.querySelector(".mobile-menu__layer");
+      
+      if (subMenu) {
+				link.setAttribute('aria-expanded', true);
+        subMenu.classList.add("show");
+        subMenu.classList.remove("hide");
+      }
+    });
+  });
+
+	const backButton = document.querySelector(".mobile-menu__close-menu-arrow");
+	backButton.addEventListener("click", function(event) {
+		event.preventDefault();
+		const topLayer = document.querySelector(".mobile-menu__layer.show");
+		if (topLayer) {
+		topLayer.classList.remove("show");
+		topLayer.classList.add("hide");
+
+				console.log(event);
+				const parentLink = event.parentElement.querySelector('a');
+		parentLink.focus();
+		}
+	});
+
+
+	function skipInactiveSubMenu(link) {
+		console.log('skip sub menu');
+	}
+
+  // Set focus behavior for navigation links
+  mobileMenuLinks.forEach(link => {
+    link.addEventListener("focus", function () {
+      //mobileMenu.classList.add('active');
+			console.log('link', link);
+    });
+    link.addEventListener("blur", function () {
+      //mobileMenu.classList.remove('active');
+			const subMenu = link.nextElementSibling;
+
+			if (subMenu && subMenu.classList.contains('hide')) {
+				console.log('menu is inactive...');
+				
+				console.log('blurred', link.nextElementSibling);
+				
+			}
+    });
+  });
+
+
+  // Set focus behavior for top level links
+  topLevelLinks.forEach(link => {
+		console.log(link);
+    link.addEventListener("click", function () {
+      const subMenu = link.nextElementSibling;
+
+      if (subMenu) {
+        const firstSubMenuLink = subMenu.querySelector('a');
+        if (firstSubMenuLink) {
+          //firstSubMenuLink.focus();
+        }
+      }
+    });
+  });
+
+  // Set focus behavior for sub menu links
+  subMenuLinks.forEach(link => {
+    link.addEventListener("click", function () {
+      const parentLi = link.parentElement;
+      const topLink = parentLi.parentElement.previousElementSibling;
+      if (topLink) {
+        //topLink.focus();
+      }
+    });
+  });
+
+});
+
+</script>
+		
+  <!-- Additional content of your web page goes here -->
+  <div class="content">
+    <a href="index.html">Back to index page</a>
+  </div>
+
+</body>
+</html>
